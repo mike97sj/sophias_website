@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(88, 79, 79)
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav ul {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid gray;
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgb(70, 65, 65);
+}
+
+h1 {
+    color: rgb(47, 82, 47);
+}
+
+p {
+    color: red;
+}
+
+.main-header {
+    background-image: url("psyced\ skin.jpg");
+    text-align: center;
+    padding-bottom: 30px;
+    background-size: cover;
+}
+
+.topnav {
+    background-color: black;
+}
+
+.column {
+    background-color: white;
+}
+
+.footer {
+    background-color: aqua;
+}
+
+.website-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Helvetica";
+    font-weight: normal;
+    color: white;
+}
+
+.website-name-large {
+    font-size: 8em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-soap-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: lightblue;
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* for slide show nav */
+
+.slideshow-sec {
+    margin: 0;
+    padding: 0;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    background: rgb(6, 97, 128);
+}
+
+
+/*changed overflow from hidden to visible*/
+
+.slider {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: visible;
+}
+
+.slides {
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 15%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100px;
+    height: 100px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 100px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: left;
+}
+
+.manual-btn {
+    border: 2px solid blue;
+    padding: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background: blue;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.second {
+    margin-left: -10%;
+}
+
+#radio3:checked~.third {
+    margin-left: -20%;
+}
+
+#radio4:checked~.fourth {
+    margin-left: -30%;
+}
+
+#radio5:checked~.fifth {
+    margin-left: -40%;
+}
+
+
+/*end of manual nav */
+
+
+/* css for automatic nav */
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.navigation-auto div {
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: blue;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: blue;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: blue;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: blue;
+}
+
+#radio5:checked~.navigation-auto .auto-btn5 {
+    background: blue;
+}
